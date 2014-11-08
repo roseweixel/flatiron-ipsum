@@ -1,0 +1,13 @@
+<%= erb :'layouts/_header' %>
+
+<h1 class="page-header">Get your Flatiron Ipsum here!</h1>
+
+<form action="/text/show" method="get">
+	<p class="main-input">
+  <label for="paragraphs">How many paragraphs do you want?</label>
+  <input type="number" id="paragraphs" name="paragraphs">
+  </p>
+  <input id="generate" class="btn btn-default btn-lg btn-block" type="submit" value="Generate">
+</form>
+
+<%= erb :'layouts/_footer' %>
