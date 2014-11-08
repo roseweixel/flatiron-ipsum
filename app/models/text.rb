@@ -17,7 +17,7 @@ class Text
       sentence_array << @words.sample
       sentence_array[0][0] = sentence_array[0][0].upcase
     end
-    sentence_array.join(" ")
+    sentence_array.join(" ") + "."
   end
 
   def paragraph
@@ -26,7 +26,7 @@ class Text
     while paragraph_array.length < length
       paragraph_array << [sentence]
     end
-    paragraph_array.join(". ") + ".</br>"
+    paragraph_array.join(" ") + "</br>"
   end
 
   def paragraphs
