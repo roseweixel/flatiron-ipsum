@@ -14,10 +14,7 @@ class Text
     length = rand(6) + 2
     sentence_array = []
     while sentence_array.length < length
-      # text_fragment = "A"
-      # while text_fragment[0] == text_fragment[0].upcase
       text_fragment = @words.sample
-      # end
       sentence_array << text_fragment if !sentence_array.include?(text_fragment)
     end
     sentence_string = sentence_array.join(" ") + "."
