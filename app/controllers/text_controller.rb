@@ -1,5 +1,3 @@
-require_relative '../../lib/words'
-
 class TextController < ApplicationController
 
   get '/' do

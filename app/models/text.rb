@@ -14,10 +14,15 @@ class Text
     length = rand(6) + 2
     sentence_array = []
     while sentence_array.length < length
-      sentence_array << @words.sample
-      sentence_array[0][0] = sentence_array[0][0].upcase
+      # text_fragment = "A"
+      # while text_fragment[0] == text_fragment[0].upcase
+      text_fragment = @words.sample
+      # end
+      sentence_array << text_fragment if !sentence_array.include?(text_fragment)
     end
-    sentence_array.join(" ") + "."
+    sentence_string = sentence_array.join(" ") + "."
+    sentence_string[0] = sentence_string[0].upcase
+    sentence_string
   end
 
   def paragraph

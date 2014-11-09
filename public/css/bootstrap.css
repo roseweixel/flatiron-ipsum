@@ -920,9 +920,13 @@ label {
   font-size: 3.5vmin;
 }
 
-/*p#flatiron-ipsum-text {
-  font-family: 'Archivo Narrow', sans-serif;
-}*/
+p#flatiron-ipsum-text {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid #eeeeee;
+  padding: 7px;
+}
 
 a {
   color: #eb6864;
